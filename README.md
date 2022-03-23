@@ -1,0 +1,2 @@
+# Spring-Security-v3
+Configurons un tout nouveau projet Spring Boot à partir de zéro avec Spring Security qui fonctionne avec l'authentification de base de données à l'aide de JPA et se connecte à une base de données MySQL. Je vais vous expliquer pas à pas comment obtenir Spring Security pour se connecter à l'instance MySQL à l'aide de JPA et authentifier les utilisateurs par rapport aux informations utilisateur stockées dans la base de données.
