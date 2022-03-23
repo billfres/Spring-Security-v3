@@ -1,12 +1,15 @@
-package com.fresnel.springsecurityjpa.models;
+package com.fresnel.springsecurityjpa.service;
 
+import com.fresnel.springsecurityjpa.models.MyUserDetails;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MyUserDetailsService implements UserDetailsService {
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return null;
+    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
+        return new MyUserDetails(s);
     }
 }
